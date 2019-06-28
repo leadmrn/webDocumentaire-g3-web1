@@ -1,0 +1,204 @@
+.section1Jacqueline{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+
+.section1Jacqueline__video{
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.section2Jacqueline{
+  width: 100vw;
+  height: 100vh;
+  background: url("../../assets/jacquelineSauvage/avocat_sauvage.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2Jacqueline__content{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section2Jacqueline__text{
+  color: white;
+  font-family: "Roboto";
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  width: 60vw;
+}
+
+
+.section3Jacqueline{
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+}
+
+.section4Jacqueline{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.section4Jacqueline__nb{
+  font-size: 400px;
+  font-family: "Anton";
+  color: #252525;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.section4Jacqueline__text{
+  font-size: 60px;
+  font-family: "Anton";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.section5Jacqueline{
+  width: 100vw;
+  height: 100vh;
+  background-color: #D5D5D5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.infosJacqueline{
+  height: 630px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info1Jacqueline{
+  width: 220px;
+  color: white;
+  font-size: 40px;
+  font-family: "Anton";
+  line-height: 60px;
+}
+
+.info23Jacqueline{
+  display: flex;
+  height: 630px;
+  align-items: center;
+}
+
+.info2Jacqueline{
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info2Jacqueline__img{
+  height: 600px;
+}
+
+.info2Jacqueline__img--2, .info2Jacqueline__img--3, .info2Jacqueline__img--4, .info2Jacqueline__text--2, .info2Jacqueline__text--3, .info2Jacqueline__text--4{
+  display: none;
+}
+
+.info2Jacqueline__text{
+  font-family: "Roboto";
+  margin-top: 25px;
+}
+
+.info3Jacqueline{
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info3Jacqueline__nb{
+  font-family: "Playfair Display";
+  font-size: 30px;
+  color: #AAAAAA;
+  transform: rotate(90deg);
+  margin-left: 20px;
+}
+
+.info3Jacqueline__nb--01{
+  color: black;
+}
+
+.section6Jacqueline{
+  height: 100vh;
+  width: 100vw;
+}
+
+.section6Jacqueline__video{
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.section7Jacqueline{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  background: url("../../assets/jacquelineSauvage/sauvage-conclusion\ copie.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.section7Jacqueline__conclusion{
+  grid-row: 1/5;
+  grid-column: 1/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.section7Jacqueline__icon{
+  height: 18px;
+  margin: 0 20px;
+}
+
+.section7Jacqueline__icon--g{
+  height: 18px;
+}
+
+.section7Jacqueline__icon--d{
+  height: 18px;
+}
+
+.section7Jacqueline__text{
+  color: white;
+  font-size: 18px;
+  font-family: "Roboto";
+  width: 60vw;
+  text-align: justify;
+  line-height: 30px;
+}
+

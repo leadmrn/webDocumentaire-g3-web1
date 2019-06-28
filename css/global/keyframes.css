@@ -1,0 +1,40 @@
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+@keyframes tall{
+  0%{
+    transform: scale(1);
+  } 50%{
+    transform: scale(2);
+  } 100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadein{
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout{
+  to {
+    opacity: 0;
+  }
+}
+
+
+@keyframes slideUp{
+  to{
+    transform: translateY(-100%)
+  }
+}
+
+@keyframes slideDown{
+  to{
+    transform: translateY(100%)
+  }
+}

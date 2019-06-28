@@ -1,0 +1,328 @@
+.button-retour{
+  width: 120px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 30px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.button-retour--affaire{
+  display: none;
+}
+
+.affairePage{
+  background: no-repeat center fixed;
+  background-size: cover;
+}
+
+.affairePage--tedBundy{
+  background-image: url('../../assets/tedBundy/tedMobile.jpg');
+}
+
+.affairePage--centralParkFive{
+  background-image: url('../../assets/centralPark5/centralparkMobile.jpg');
+}
+
+.affairePage--jacquelineSauvage{
+  background-image: url('../../assets/jacquelineSauvage/jacquelineMobile.png');
+}
+
+.affaire{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.701);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.affaire__slide{
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+  z-index: 2;
+  background-color: black;
+}
+
+.affaire__slideUp{
+  top: 0;
+  animation: slideUp 1s forwards;
+}
+
+.affaire__slideDown{
+  bottom: 0;
+  animation: slideDown 1s forwards;
+}
+
+.affaireInfo{
+  color: white;
+  width: 350px;
+  margin: 10px 10px 30px 10px;
+}
+
+.affaireInfo__close{
+  width: 7.5px;
+  height: 7.5px;
+  border-radius: 50px;
+  background-color: white;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  animation: tall 3s infinite;
+}
+
+.affaireInfo__title{
+  font-size: 45px;
+  font-family: "Playfair Display";
+  margin: 10px;
+}
+
+.affaireInfo__name{
+  font-size: 14px;
+  font-family: "Playfair Display";
+  letter-spacing: 1.2px;
+  margin: 10px;
+}
+
+.affaireInfo__desc{
+  font-size: 14px;
+  font-family: "Roboto";
+  letter-spacing: 1.1px;
+  margin: 20px 10px;
+  line-height: 20px;
+}
+
+.affaireInfo__button{
+  width: 120px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 10px;
+}
+
+.affaireNumber{
+  display: none;
+}
+
+.affaireNext__preview{
+  display: none;
+}
+
+.affaireNext__points{
+  display: flex;
+  width:  120px;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+.affaireNext__points:hover{
+  cursor: initial;
+}
+
+.affaireNext__point{
+  width: 6px;
+  height: 6px;
+  background-color: #9C9C9C;
+  border-radius: 50px;
+  transition: transform 1.5s;
+}
+
+.affaireNext__point:hover{
+  transform: scale(2.5);
+}
+
+.affairePage--tedBundy .affaireNext__point--2{
+  background-color: #fff;
+}
+
+.affairePage--centralParkFive .affaireNext__point--3{
+  background-color: #fff;
+}
+
+.affairePage--jacquelineSauvage .affaireNext__point--4{
+  background-color: #fff;
+}
+
+@media(min-width: 1000px){
+  .button-retour--affaire{
+    display: flex;
+  }
+
+  .affairePage--tedBundy{
+    background-image: url('../../assets/tedBundy/ted-bundy-min\ \(1\).png');
+  }
+  
+  .affairePage--centralParkFive{
+    background-image: url('../../assets/centralPark5/intro_centralpark.png');
+  }
+  
+  .affairePage--jacquelineSauvage{
+    background-image: url('../../assets/jacquelineSauvage/sauvage-conclusion\ copie.jpg');
+  }
+
+  .affaire{
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .affaireInfos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 96vw;
+  }
+
+  .affaireInfo{
+    width: 370px;
+  }
+
+  .affaireInfo__button{
+    margin: 20px;
+  }
+
+  .affaireInfo__close{
+    left: 70px;
+  }
+
+  .affaireInfo__title{
+    font-size: 70px;
+    margin: 20px;
+  }
+
+  .affaireInfo__name{
+    font-size: 25px;
+    margin: 20px;
+  }
+
+  .affaireInfo__desc{
+    font-size: 18px;
+    line-height: 28px;
+    margin: 40px 20px 20px 20px;
+  }
+
+  .affaireNumber{
+    display: flex;
+    align-items: flex-start;
+    color: white;
+    font-family: "Roboto";
+    font-weight: bold;
+    margin-right: 70px;
+  }
+
+  .affaireNumber__page{
+    font-size: 80px;
+    letter-spacing: 10px;
+  }
+
+  .affaireNumber__total{
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .affaireNumber__line{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 5px;
+  }
+
+  .affaireNext{
+    width: 400px;
+    height: 280px;
+    position: absolute;
+    bottom: 50px;
+    right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .affaireNext__preview{
+    display: initial;
+    color: white;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .preview--ted{
+    opacity: 0;
+  }
+
+  .preview--central{
+    opacity: 0;
+  }
+
+  .preview--jacqueline{
+    opacity: 0;
+  }
+
+  .preview__vid{
+    display: flex;
+    align-items: center;
+  }
+
+  .preview__number{
+    font-size: 80px;
+    font-family: "Roboto";
+    font-weight: bold;
+    letter-spacing: 5px;
+    transform: translateX(30px);
+  }
+
+  .preview__video{
+    height: 150px;
+  }
+
+  .preview__title{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    margin: 10px;
+  }
+
+  .preview__name{
+    font-size: 15px;
+    font-family: "Playfair Display";
+    margin: 10px;
+    letter-spacing: 1.2px;
+  }
+
+  .affaireNext__points{
+    width: 100%;
+    justify-content: space-around;
+    margin: 0px;
+  }
+
+  .affaire--ted, .affaire--central, .affaire--jacqueline{
+    display: none;
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>L'affaire</title>
+  </head>
+  <body class="introPage" style="overflow: hidden">
+    <a href="./pages/tedBundy/affaireTed.html"></a>
+    <section class="loader" id="home">
+      <div class="loader__circle">
+        <svg class="loader__circleProgress loader__circleProgress--1" width="120" height="120" viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="54" fill="none" stroke="#D5D5D5" stroke-width="0.5" />
+          <circle class="loader__progressValue" cx="60" cy="60" r="54" fill="none" stroke="#000" stroke-width="0.5" />
+        </svg>
+        
+        <svg class="loader__circleProgress loader__circleProgress--2" width="400" height="400" viewBox="0 0 400 400">
+            <circle cx="200" cy="200" r="194" fill="none" stroke="#D5D5D5" stroke-width="0.5" />
+            <circle class="loader__progressValue loader__progressValue--2" cx="200" cy="200" r="194" fill="none" stroke="#000" stroke-width="0.5" />
+          </svg>
+  
+        <div class="loader__text">
+          <span id="loader"></span>
+        </div>
+      </div>
+    </section>
+    <div class="intro">
+      <div class="intro__slide intro__slideUp"></div>
+      <div class="intro__slide intro__slideDown"></div>
+      <video loop preload class="intro__video" src="assets/laffaire.mp4"></video>
+      <div class="intro__controlss controls">
+        <button class="controls__pause"><img src="assets/icon/pause.png"></button>
+        <button class="controls__play"><img src="assets/icon/play.png"></button>
+      </div>
+      <a href="pages/home.html"><div class="intro__next">SUIVANT</div></a>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

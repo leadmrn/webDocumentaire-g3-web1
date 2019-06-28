@@ -1,0 +1,78 @@
+.homePage{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__contentTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__title{
+  opacity: 0;
+  font-size: 60px;
+  font-family: "Playfair Display";
+  animation: fadein 3s forwards;
+}
+
+.home__subtitle{
+  opacity: 0;
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: thin;
+  font-style: italic;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  animation: fadein 3s forwards;
+  animation-delay: 0.5s;
+}
+
+.home__contentDesc{
+  display: none;
+  opacity: 0;
+  animation: fadein 1s forwards;
+  width: 80vw;
+}
+
+.home__intro{
+  width: 80vw;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "Roboto";
+  letter-spacing: 2px;
+  color: black;
+}
+
+.home__button{
+  width: 120px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 10px;
+  transform: translateY(100px);
+}
+
+@media(min-width: 1000px){
+  .home__title{
+    font-size: 100px;
+  }
+
+  .home__subtitle{
+    font-size: 20px;
+  }
+}

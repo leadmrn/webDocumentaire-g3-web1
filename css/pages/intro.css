@@ -1,0 +1,78 @@
+.intro__slideUp{
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 50vh;
+  background-color: #D5D5D5;
+  z-index: 2;
+  animation: slideUp 0.5s forwards;
+}
+
+.intro__slideDown{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 50vh;
+  background-color: #D5D5D5;
+  z-index: 2;
+  animation: slideDown 0.5s forwards;
+}
+
+.introPage{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  overflow: hidden;
+}
+
+.intro{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__video{
+  width: 90vw;
+  margin: 20px;
+  z-index: -1;
+}
+
+.fadeout{
+  animation: fadeout 1s forwards;
+}
+
+.intro__controlss img{
+  display: flex;
+  margin: 10px;
+}
+
+.intro__next{
+  width: 120px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 10px;
+}
+
+button{
+  background-color: black;
+  border: none;
+}
+
+@media(min-width:1000px){
+  .intro__video{
+    width: 70vw;
+  }
+}
+

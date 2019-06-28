@@ -1,0 +1,655 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} 
+
+.ted {
+  scroll-behavior: smooth;
+  
+}
+
+.ted__first, .ted__second, .ted__third, .ted__fourth, .ted__fifth, .ted__six, .ted__seven {
+  overflow-x: hidden;
+  position: sticky;
+  top: 0px;
+}
+
+.point {
+  position: fixed;
+  margin-top: 3%;
+  margin-left: 1.5%;
+  background: #990000;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.ted__first {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr 0.7fr;
+  grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+}
+
+.line__vertical {
+  background-color: rgba(255, 255, 255, 0.235);
+  width: 1px;
+  grid-row: 1/5;
+}
+
+.line__vertical--1{
+  grid-column: 2;
+}
+
+.line__vertical--2{
+  grid-column: 3;
+}
+
+.line__vertical--3{
+  grid-column: 4;
+}
+
+.line__horizontal {
+  background-color: rgba(255, 255, 255, 0.235);
+  height: 1px;
+  grid-column: 1/5;
+}
+
+.line__horizontal--1{
+  grid-row: 2;
+}
+
+.line__horizontal--2{
+  grid-row: 3;
+}
+
+.line__horizontal--3{
+  grid-row: 4;
+}
+
+.video__bundy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -100;
+}
+
+.video__bundy--deux {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+.text__container {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 0px rgba(145, 145, 145, 0.25);
+  transform: rotate(-10deg);
+  color: white;
+  width: 360px;
+  height: 460px;
+  grid-column: 1/5;
+  grid-row: 2/5;
+  margin-top: 5%;
+  margin-left: 2%;
+  font-family: "Roboto";
+  text-align: justify;
+}
+
+.big__container--text {
+  display: none;
+}
+
+.text__container--two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 390px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 0px rgba(145, 145, 145, 0.25);
+  transform: rotate(-10deg);
+  color: white;
+} 
+
+.text__title {
+  text-align: center;
+  font-family: "Anton";
+  font-size: 25px;
+}
+
+.text__paragraph {
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  width: 320px;
+  font-family: "Roboto";
+}
+
+.text__circle {
+  position: absolute;
+  top: 20%;
+}
+
+.text__logo {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.text__line {
+  width: 30px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 45%;
+  margin-left: 3rem;
+  animation: line 1.5s infinite;
+}
+
+@keyframes line {
+  0%   {left: calc(22% + 30px); width: 0px;}
+  35%   {left: calc(22% + 0px); width: 30px;}
+  70%   {left: calc(22% + 0px); width: 0px;}
+  100%   {left: calc(22% + 0px); width: 0px;}
+}
+
+.play {
+  display: none;
+}
+
+.play__circle {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ted__second {
+  width: 100vw;
+  height: 100vh;
+  background-color: #D5D5D5;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+  text-align: center;
+}
+
+.carte__container {
+  background: url('../../assets/tedBundy/carte.png') no-repeat center;
+  width: 1000px;
+  height:100vh;
+  position: relative;
+}
+
+.carte__locater {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+
+.carte__name {
+  font-size: 0.8rem;
+}
+
+.carte__locater--1 {
+  position: absolute;
+  top: 16%;
+  left: 10%;
+}
+
+.carte__victim--1 {
+  display: none;
+}
+
+.carte__image--1 {
+  position: absolute;
+  top: 8%;
+  left: 9%;
+}
+
+.carte__name--1 {
+  position: absolute;
+  top: 9%;
+  left: 0;
+}
+
+.carte__locater--2 {
+  position: absolute;
+  top: 25%;
+  left: 6%;
+}
+
+.carte__victim--2 {
+  display: none;
+}
+
+.carte__image--2 {
+  position: absolute;
+  top: 21%;
+  left: 10%;
+}
+
+.carte__name--2 {
+  position: absolute;
+  top: 24%;
+  left: 18%;
+  color: white;
+}
+
+.carte__locater--3 {
+  position: absolute;
+  top: 30%;
+  left: 21%;
+}
+
+.carte__victim--3 {
+  display: none;
+}
+
+.carte__image--3 {
+  position: absolute;
+  top: 28%;
+  left: 25%;
+}
+
+.carte__name--3 {
+  position: absolute;
+  top: 26%;
+  left: 23%;
+  color: #fff;
+}
+
+.carte__locater--4 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.carte__victim--4 {
+  display: none;
+}
+
+.carte__image--4 {
+  position: absolute;
+  top: 35%;
+  left: 9%;
+}
+
+.carte__name--4 {
+  position: absolute;
+  top: 37%;
+  left: 15%;
+  color: #fff;
+}
+
+.carte__locater--5 {
+  position: absolute;
+  top: 43%;
+  left: 23%;
+}
+
+.carte__victim--5 {
+  display: none;
+}
+
+.carte__image--5 {
+  position: absolute;
+  top: 48%;
+  left: 22%;
+}
+
+.carte__name--5 {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  color: #fff;
+}
+
+.carte__locater--6 {
+  position: absolute;
+  top: 38%;
+  left: 32%;
+}
+
+.carte__victim--6 {
+  display: none;
+}
+
+.carte__image--6 {
+  position: absolute;
+  top: 39%;
+  left: 36%;
+}
+
+.carte__name--6 {
+  position: absolute;
+  top: 42%;
+  left: 42%;
+  color: white;
+}
+
+.carte__locater--7 {
+  position: absolute;
+  top: 25%;
+  left: 90%;
+}
+
+.carte__victim--7 {
+  display: none;
+}
+
+.carte__image--7 {
+  position: absolute;
+  top: 18%;
+  left: 89%;
+}
+
+.carte__name--7 {
+  position: absolute;
+  top: 20%;
+  left: 82%;
+}
+
+.carte__locater--8 {
+  position: absolute;
+  top: 64%;
+  left: 75%;
+}
+
+.carte__victim--8 {
+  display: none;
+}
+
+.carte__image--8 {
+  position: absolute;
+  top: 63%;
+  left: 78%;
+}
+
+.carte__name--8 {
+  position: absolute;
+  top: 65%;
+  left: 84%;
+}
+
+.count__section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30rem;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+.count__title {
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.count__numbers {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.count__number--one, .count__number--two {
+  font-size: 3rem;
+  padding: 0 2rem;
+  font-family: "Anton";
+  letter-spacing: 3px;
+}
+
+.count__number--title {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.ted__third {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr 0.7fr;
+  grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+}
+
+
+
+.half__container {
+  background-color: #000;
+  height: 100vh;
+  width: 50vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.video__bundy--trois {
+  position: relative;
+  top: 10%;
+  min-width: 50%;
+  min-height: 80%;
+  width: 30vw;
+  z-index: 2;
+}
+
+.otherHalf__container {
+  z-index: -1;
+  background-color: black;
+  color: white;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title__container {
+  font-size: 3.5rem;
+  font-family: "Anton";
+}
+
+.title__part {
+  background: #FFFFFF;
+  text-shadow: 0.7px 0.7px 0 #fff, 0.7px -0.7px 0 #fff, -0.7px 0.7px 0 #fff, -0.7px -0.7px 0 #fff, 0.7px 0px 0 #fff, 0px 0.7px 0 #fff, -0.7px 0px 0 #fff, 0px -0.7px 0 #fff;
+  background: #000;
+  color: black;
+}
+
+.paragraph__part {
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: justify;
+  width: 25vw;
+  margin-top: 2rem;
+  font-family: "Roboto";
+}
+
+.ted__fourth {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr 0.7fr;
+  grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+}
+
+.ted__fifth {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.ted__fifth--container {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.otherfifth__title {
+  margin-bottom: 2rem;
+  color: #000;
+  font-size: 3rem;
+  text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, -1px -1px 0 #fff, 1px 0px 0 #fff, 0px 1px 0 #fff, -1px 0px 0 #fff, 0px -1px 0 #fff;
+  font-family: "Anton";
+}
+
+.ted__fifth--container p {
+  font-size: 1.2rem;
+  text-align: justify;
+  width: 50vw;
+  line-height: 2rem;
+  font-family: "Roboto";
+}
+
+.ted__six {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr 0.7fr;
+  grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+  min-height: 100vh;
+  z-index: 2;
+  position: relative;
+}
+
+.scroll--horizontal {
+  height: 300vh;
+}
+
+.section__horizontal {
+  background-color: #fff;
+  width: 300vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section--isFixed .section__horizontal {
+  position: fixed;
+}
+
+.section--isScrolled .section__horizontal{
+  bottom: 0;
+  top: auto;
+}
+
+.section__movies {
+  display: flex;
+}
+
+.section__movie {
+  flex-basis: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section__movie--inner {
+  display: flex;
+  flex-direction: row;
+}
+
+.section__movie--year {
+  padding: 0 4rem;
+  font-size: 6rem;
+  color: #fff;
+  text-shadow: 0.5px 0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, -0.5px -0.5px 0 #000, 0.5px 0px 0 #000, 0px 0.5px 0 #000, -0.5px 0px 0 #000, 0px -0.5px 0 #000;
+  font-family: "Anton";
+}
+
+.section__movie--img {
+  width: 15rem;
+  height: 20rem;
+}
+
+.section__movie--text {
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+
+.section__movie--description {
+  color: #9A9A9A;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-family: "Anton";
+}
+
+.section__movie--resume {
+  width: 25vw;
+  text-transform: uppercase;
+  text-align: justify;
+  line-height: 1.3rem;
+  font-size: 13px;
+  font-family: "Roboto";
+}
+
+
+.ted__seven {
+  background: url('../../assets/tedBundy/ted.png') no-repeat center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr 0.7fr;
+  grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+  z-index: 2;
+}
+
+.ted__conclusion {
+  grid-column: 1/5;
+  grid-row: 1/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ted__conclusion--inner {
+  width: 68rem;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: justify;
+  font-family: "Roboto";
+}
+
+.ted__quotes {
+  display: flex;
+  justify-content: space-between;
+  width: 75rem;
+}
+
+.ted__quote {
+  width: 2rem;
+}

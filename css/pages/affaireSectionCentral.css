@@ -1,0 +1,640 @@
+@keyframes moveJ{
+  0%{
+    transform: translate(0);
+  } 50%{
+    transform: translate(30px, -30px);
+  } 100%{
+    transform: translate(0);
+  }
+}
+
+.border-text{
+  text-shadow:-1px 1px 1px white, 0px -1px 1px white;
+  color: black;
+}
+
+.affaireSection{
+  scroll-behavior: smooth;
+}
+
+.affaireSection section{
+  position: sticky;
+  top: 0px;
+}
+
+.section1Central, .section7Central{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+
+.section1Central__video{
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.line__vertical{
+  background-color: #9A9A9A;
+  width: 1px;
+  grid-row: 1/5;
+}
+
+.line__vertical--1{
+  grid-column: 2;
+}
+
+.line__vertical--2{
+  grid-column: 3;
+}
+
+.line__vertical--3{
+  grid-column: 4;
+}
+
+.line__horizontal{
+  background-color: #9A9A9A;
+  height: 1px;
+  grid-column: 1/5;
+}
+
+.line__horizontal--1{
+  grid-row: 2;
+}
+
+.line__horizontal--2{
+  grid-row: 3;
+}
+
+.line__horizontal--3{
+  grid-row: 4;
+}
+
+.section2Central{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.section2Central__perso{
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.section2Central__name{
+  color: white;
+  font-family: "Anton";
+  font-size: 85px;
+}
+
+.section2Central__name:hover{
+  text-shadow:0 1px 0 white, 0 -1px 0 white;
+  color: black;
+}
+
+.section2Central__img{
+  height: 75%;
+  margin-left: 70px;
+  display: none;
+}
+
+.section2Central__biography{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.section2Central__biographyContent{
+  width: 500px;
+  height: 70vh;
+  background-color: rgba(127, 127, 127);
+  border: 1px solid #990000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2Central__biographyTitle{
+  color: white;
+  font-size: 35px;
+  font-family: "Anton";
+  letter-spacing: 3px;
+}
+
+.section2Central__biographyText{
+  width: 80%;
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto";
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: justify;
+  padding-top: 20px;
+}
+
+.section2Central__biographyButton{
+  width: 120px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.section3Central{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100vw;
+  height: 100vh;
+}
+
+.section3Central__media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: no-repeat center;
+  background-size: cover;
+}
+
+.section3Central__content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section3Central__content:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section3Central__name{
+  font-size: 70px;
+  color: white;
+  font-family: "Anton";
+  display: none;
+}
+
+.section3Central__media--donald{
+  background-image: url("../../assets/centralPark5/trumpnew.png");
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.section3Central__media--joan{
+  background-image: url("../../assets/centralPark5/joandidion.jpg");
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.section3Central__media--daily{
+  background-image: url("../../assets/centralPark5/dailynews.png");
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.section3Central__media--elizabeth{
+  background-image: url("../../assets/centralPark5/elizabeth-lederer.jpg");
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.section3Central__media--medias{
+  background-image: url("../../assets/centralPark5/lesmedias.png");
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.section3Central__media--mouvement{
+  background-image: url("../../assets/centralPark5/mouvementnew.png");
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.affaireSectionTrump{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.affaireSectionTrump__journal{
+  height: 450px;
+  position: absolute;
+  right: 150px;
+  top: 190px;
+}
+
+.affaireSectionTrump__journal:hover{
+  animation: moveJ 3s infinite;
+
+}
+
+.info12Trump{
+  width: 87vw;
+  height: 78vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.info1Trump{
+  width: 50vw;
+}
+
+.info1Trump__title{
+  font-size: 55px;
+  font-family: "Anton";
+  color: white;
+  margin-bottom: 40px;
+}
+
+.info1Trump__text, .info2Trump__text{
+  font-size: 16px;
+  color: white;
+  font-family: "Roboto";
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-align: justify;
+  background-color: black;
+}
+
+.info1Trump__media{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info1Trump__video{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.info2Trump{
+  width: 30vw;
+}
+
+.affaireSectionJoan{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.info1Joan{
+  width: 48vw;
+  height: 100vh;
+  background: url("../../assets/centralPark5/joandidion.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.info2Joan{
+  width: 52vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info2Joan__title{
+  font-size: 45px;
+  font-family: "Anton";
+  color: #990000;
+  margin: 0 0 50px 0;
+}
+
+.info2Joan__text{
+  font-size: 16px;
+  font-family: "Roboto";
+  color: white;
+  width: 450px;
+  text-align: justify;
+  line-height: 32px;
+}
+
+.affaireSectionDaily{
+  height: 100vh;
+  width: 100vw;
+  background: url("../../assets/centralPark5/fond-min.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.affaireSectionDaily__content{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.affaireSectionDaily__text{
+  width: 50vw;
+  color: white;
+  font-family: "Roboto";
+  font-size: 20px;
+  line-height: 40px;
+  text-align: justify;
+}
+
+.affaireSectionElizabeth{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  background-color: #D5D5D5;
+}
+
+.affaireSectionElizabeth__img{
+  grid-column: 1/5;
+  grid-row: 2;
+  background: url("../../assets/centralPark5/elizabeth-lederer.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.affaireSectionElizabeth__text{
+  grid-row: 3;
+  grid-column: 1/3;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  font-family: "Anton";
+  line-height: 25px;
+}
+
+.affaireSectionMedias{
+  height: 100vh;
+  width: 100vw;
+  background: url("../../assets/centralPark5/img-min.png") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.affaireSectionMedias__content{
+  width: 480px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-10deg);
+}
+
+.affaireSectionMedias__title{
+  color: white;
+  font-size: 30px;
+  font-family: "Anton";
+  margin: 15px 0;
+}
+
+.affaireSectionMedias__text{
+  width: 83%;
+  text-align: justify;
+  color: white;
+  font-size: 18px;
+  font-family: "Roboto";
+  line-height: 25px;
+}
+
+.affaireSectionMouvement{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.affaireSectionMouvement__texts{
+  width: 40vw;
+}
+
+.affaireSectionMouvement__text{
+  height: 12.5vh;
+  color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  font-size: 100px;
+  font-family: "Anton";
+}
+
+.affaireSectionMouvement__text--white{
+  color: white;
+}
+
+.affaireSectionMouvement__video{
+  height: 380px;
+  background-color: black;
+}
+
+.affaireSection__section4Central{
+  width: 100vw;
+  height: 100vh;
+  background: url("../../assets/centralPark5/centralpark.png") no-repeat center;
+  background-size: cover;
+}
+
+.section4Central{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section4Central__title{
+  height: 20vh;
+  width: 100vw;
+  color: white;
+  font-family: "Anton";
+  font-size: 60px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  letter-spacing: 6px;
+}
+
+.section4Central__persos{
+  height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.section4Central__perso{
+  width: 19vw;
+  display: flex;
+}
+
+.section4Central__line{
+  width: 1px;
+  height: 500px;
+  background-color: #D5D5D5;
+  margin-right: 12px;
+}
+
+.section4Central__perso--korey .section4Central__line{
+  height: 700px;
+}
+
+.section4Central__name{
+  font-size: 16px;
+  color: white;
+  font-family: "Roboto";
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  padding: 10px 0;
+}
+
+.section4Central__nbYears{
+  font-size: 40px;
+  color: #990000;
+  font-family: "Anton";
+  letter-spacing: 4px;
+  padding: 15px 0;
+}
+
+.section4Central__yearsOld{
+  font-size: 15px;
+  color: white;
+  font-family: "Raleway";
+  letter-spacing: 1.1px;
+  padding: 10px 0;
+}
+
+.section5Central{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.section5Central__video{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.section6Central{
+  height: 100vh;
+  width: 100vw;
+  background: url("../../assets/centralPark5/centerpark-after-min.png") no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.section6Central__video{
+  height: 400px;
+  margin: 0 0 80px 40px;
+}
+
+.section7Central{
+  background: url("../../assets/centralPark5/finalcenterpark-min.png") no-repeat center;
+  background-size: cover;
+}
+
+.section7Central__content{
+  grid-column: 1/5;
+  grid-row: 1/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.section7Central__img{
+  height: 18px;
+  margin: 0 20px;
+}
+
+.section7Central__text{
+  width: 70vw;
+  font-size: 18px;
+  color: white;
+  font-family: "Roboto";
+  line-height: 25px;
+  text-align: justify;
+}
+
+.otherPerso{
+  width: 600px;
+  height: 240px;
+  position: absolute;
+  right: 100px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.otherPerso__title{
+  color: white;
+  font-family: "Anton";
+  font-size: 34px;
+}
+
+.otherPerso__content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.otherPerso__perso{
+  width: 250px;
+  height: 150px;
+  background:no-repeat center;
+  background-size: cover;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: "Anton";
+}
+
+.otherPerso__perso div{
+  width: 250px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.otherPerso__perso--ted{
+  background-image: url("../../assets/tedBundy/ted-bundy-min\ \(1\).png");
+}
+
+.otherPerso__perso--jacqueline{
+  background-image: url("../../assets/jacquelineSauvage/sauvage-conclusion\ copie.jpg");
+}
+
+.otherPerso__perso--central{
+  background-image: url("../../assets/centralPark5/centralparkfive_fond.jpg");
+}

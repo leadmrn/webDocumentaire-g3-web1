@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+.loader {
+  background-color: #D5D5D5;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader__circleProgress {
+  transform: rotate(-90deg);
+}
+
+.loader__progressValue {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 0;
+  animation: progress 1s ease-in-out;
+}
+
+.loader__circleProgress--2 {
+  display: none;
+}
+
+.loader__text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #BCBCBC;
+  font-size: 3rem;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+@media (min-width: 1000px) {
+  .loader__circleProgress--1 {
+    display: none;
+  }
+
+  .loader__circleProgress--2 {
+    display: initial;
+  }
+
+  .loader__progressValue--2 {
+    animation: progress 4s ease-in-out;
+    stroke-dasharray: 1400;
+  }
+
+  .loader__text {
+    font-size: 12rem;
+  }
+}

@@ -1,0 +1,11 @@
+@import './global/reset.css';
+@import './global/fonts.css';
+@import './global/keyframes.css';
+@import './global/loader.css';
+@import './pages/intro.css';
+@import './pages/home.css';
+@import './pages/affaire.css';
+@import './pages/affaireName.css';
+@import './pages/affaireSectionCentral.css';
+@import './pages/affaireSectionJacqueline.css';
+@import './pages/affaireSectionTed.css';
